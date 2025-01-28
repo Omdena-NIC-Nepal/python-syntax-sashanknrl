@@ -1,5 +1,5 @@
 def format_string(name, age):
-    return f"My name is {name} and I am {age} years old."
+    return f"My name is {name} and I am {age} years old"
 
 
 def conditional_check(number):
@@ -13,8 +13,9 @@ def conditional_check(number):
 
 def loop_sum(n):
     sum = 0
-    for number in range(1, n):
+    for number in range(1, n+1):
         sum += number
+    return sum
 
 
 def list_operations(numbers):
@@ -43,7 +44,7 @@ def dict_operations(students_dict):
 
 
 def set_operations(list1, list2):
-    commmon_elements = list1.intersection(list2)
+    commmon_elements = set(list1).intersection(set(list2))
     return commmon_elements
 
 
